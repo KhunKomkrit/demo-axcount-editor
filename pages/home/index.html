@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/all.min.css">
+
+    <style>
+        .active1 {
+            color: #007299;
+            font-weight: bold;
+        }
+    
+        .bg-content1 {
+            background: linear-gradient(0deg, rgba(0, 114, 153, 0.03), rgba(0, 114, 153, 0.03));
+        }
+    
+        .pic-index1 {
+            width: 100%;
+            max-height: 525px;
+            border-top-left-radius: 50%;
+        }
+    
+        .detail-content1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0px 30px 0px;
+        }
+    
+        .detail-content1>h1 {
+            font-weight: 700;
+            line-height: 84px;
+            color: #172048;
+        }
+    
+        .detail-content1>h2 {
+            font-weight: 700;
+            line-height: 76px;
+            background: linear-gradient(90deg, #37B8C6 7.58%, #067A9E 63.31%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    
+        .detail-content1>span {
+            font-weight: 500;
+            color: #C4C4C4;
+            line-height: 22px;
+        }
+    
+        .btn-content1 {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0px 30px 0px;
+        }
+    
+        .btn-register-index {
+            color: #ffffff;
+            background: linear-gradient(97.65deg, #56E0E0 0.33%, #007299 93.35%);
+            border: 1px solid #007299;
+            box-shadow: 0px 10px 15px rgba(1, 115, 153, 0.2);
+            border-radius: 39px;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: start;
+        }
+    
+        .btn-register-index:hover {
+            color: #007299;
+            background: #ffffff;
+            border: 1px solid #007299;
+            transition: 0.5s;
+        }
+    
+        .btn-demo {
+            color: #007299;
+            border: 1px solid #007299;
+            background: #ffffff;
+            box-shadow: 0px 10px 15px rgba(1, 115, 153, 0.2);
+            border-radius: 39px;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: end;
+        }
+    
+        .btn-demo:hover {
+            color: #ffffff;
+            background: linear-gradient(97.65deg, #56E0E0 0.33%, #007299 93.35%);
+            transition: 0.5s;
+        }
+    
+        .count-head {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 0px 30px 0px;
+        }
+    
+        .count-display1 {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+    
+        .count-display2 {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+    
+        .detail-about-bottom {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            line-height: 40px;
+            margin-top: 40px;
+        }
+    
+        .header-content2 {
+            text-align: center;
+        }
+    
+        .header-content2>h1 {
+            font-weight: 700;
+            line-height: 72px;
+            color: #172048;
+        }
+    
+        .function-detail1 {
+            background: #F4FEFF;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .function-detail2 {
+            background: linear-gradient(180deg, rgba(78, 214, 218, 0.57) 0%, #72DBFC 100%);
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .function-detail1>h5 {
+            margin: 40px 0px 60px 0px;
+        }
+    
+        .bg-img {
+            margin: 60px 0px 20px 0px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            padding: 15px;
+        }
+    
+        .function-detail2>h5 {
+            margin: 40px 0px 60px 0px;
+        }
+    
+        .head-midcontent1 {
+            background: linear-gradient(90deg, #37B8C6 7.58%, #067A9E 63.31%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    
+        .img-midcontent1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .img-midcontent1>img {
+            width: 100%;
+            border-radius: 15px;
+            margin: 20px 0px;
+        }
+    
+        .detail-midcontent1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            padding: 40px 40px;
+            line-height: 35px;
+        }
+    
+        .btn-midcontent1 {
+            margin-top: 20px;
+        }
+    
+        .btn-register-midcontent1 {
+            color: #007299;
+            border: 1px solid #007299;
+            background: #ffffff;
+            box-shadow: 0px 10px 15px rgba(1, 115, 153, 0.2);
+            border-radius: 39px;
+            padding: 10px 20px;
+        }
+    
+        .btn-register-midcontent1:hover {
+            color: #ffffff;
+            background: linear-gradient(97.65deg, #56E0E0 0.33%, #007299 93.35%);
+            transition: 0.5s;
+        }
+    
+        .bg-midcontent2 {
+            background-image: url('./assets/img/bg-1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .head-midcontent2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .head-midcontent2>h5 {
+            line-height: 65px;
+        }
+    
+        .detail-midcontent2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0px;
+            line-height: 35px;
+        }
+    
+        .detail-midcontent2>h2 {
+            background: linear-gradient(90deg, #37B8C6 7.58%, #067A9E 63.31%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    
+        .carousel-indicators [data-bs-target] {
+            background-color: #067A9E;
+        }
+    
+        .carousel-item>img {
+            border-radius: 15px;
+        }
+    
+        .bg-midcontent3 {
+            background-image: url('./assets/img/bg-1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .head-midcontent3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .head-midcontent3>h5 {
+            line-height: 65px;
+        }
+    
+        .detail-midcontent3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0px;
+            line-height: 35px;
+        }
+    
+        .detail-midcontent3>h2 {
+            background: linear-gradient(90deg, #37B8C6 7.58%, #067A9E 63.31%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    
+        .bg-pricecontent {
+            background-image: url('./assets/img/bg-1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .head-midcontent4 {
+            background: linear-gradient(90deg, #37B8C6 7.58%, #067A9E 63.31%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    
+        .img-midcontent4 {
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .img-midcontent4>img {
+            width: 100%;
+            border-radius: 15px;
+            margin: 20px 0px;
+        }
+    
+        .detail-midcontent4 {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            padding: 60px 30px;
+            line-height: 35px;
+        }
+    
+        .mid-content7 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .mid-content7>img {
+            width: 100%
+        }
+    
+        .bg-content8 {
+            background-image: url('./assets/img/bg-midcontent8.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-top-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+        }
+    
+        .accordion {
+            background-color: #FFFFFF;
+            padding: 15px 30px;
+            border-radius: 50px;
+        }
+    
+        .accordion-button:focus {
+            z-index: 3;
+            border-color: #ffffff;
+            outline: 0;
+            box-shadow: none;
+        }
+    
+        .accordion-button:not(.collapsed) {
+            color: #007299;
+            background-color: #ffffff;
+            box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
+        }
+    
+        .mid-content9 {
+            background: #FFFFFF;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 15px;
+            margin: 30px 0px;
+            padding: 35px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        .mid-content9>h1 {
+            background: linear-gradient(90.29deg, #172048 0.21%, #005C7B 99.79%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            line-height: 60px;
+        }
+    
+        .btn-register-index {
+            color: #ffffff;
+            background: linear-gradient(97.65deg, #56E0E0 0.33%, #007299 93.35%);
+            border: 1px solid #007299;
+            box-shadow: 0px 10px 15px rgba(1, 115, 153, 0.2);
+            border-radius: 39px;
+            padding: 10px 20px;
+            margin-right: 5px;
+        }
+    
+        .btn-register-index:hover {
+            color: #007299;
+            background: #ffffff;
+            border: 1px solid #007299;
+            transition: 0.5s;
+        }
+    
+        .btn-demo {
+            color: #007299;
+            border: 1px solid #007299;
+            background: #ffffff;
+            box-shadow: 0px 10px 15px rgba(1, 115, 153, 0.2);
+            border-radius: 39px;
+            padding: 10px 20px;
+            margin-left: 5px;
+        }
+    
+        .btn-demo:hover {
+            color: #ffffff;
+            background: linear-gradient(97.65deg, #56E0E0 0.33%, #007299 93.35%);
+            transition: 0.5s;
+        }
+    
+        @media (max-width: 880px) {
+    
+            .detail-content1,
+            .btn-content1,
+            .count-head {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+    
+        @media (max-width: 450px) {
+    
+            .detail-content1,
+            .btn-content1,
+            .count-head {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+    
+            .mid-content9 {
+                background: #FFFFFF;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                border-radius: 15px;
+                margin: 30px 0px;
+                padding: 35px 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-content1">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-12 col-12"></div>
+                    <div class="col-xl-8 col-lg-8 col-md-12 col-12">
+                        <div class="detail-content1">
+                            <h1>โปรแกรมบัญชี ออนไลน์</h1>
+                            <h2>ใช้งานง่าย ครบวงจรธุรกิจ</h2>
+                            <span>เปิดเอกสารวางบิลเก็บเงินลูกค้าสรุปยอดทำได้หมดในโปรแกรมบัญชีสำเร็จรูปออนไลน์ใช้งานง่ายทั้งในเว็บไซต์และแอปมือถือแถมนัดให้เราช่วยแนะนำการใช้งานให้คุณได้ฟรี!</span>
+                        </div>
+                        <div class="btn-content1">
+                            <a class="btn-register-index" href="signUp.php">สมัครใช้งานฟรี</a>
+                            <a class="btn-demo" href="">นัดสาธิตใช้งาน</a>
+                        </div>
+                        <div class="count-head">
+                            <div class="text-center">
+                                <div class="count-display1">
+                                    <h2 class="count text-dark">60000</h2>
+                                    <h2 style="color: #017399;">&nbsp;+</h2>
+                                </div>
+                                <span class="text-muted count-display-bottom">ผู้ประกอบการที่ใช้ Axcount</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="count-display2">
+                                    <h2 class="count text-dark">1500</h2>
+                                    <h2 style="color: #017399;">&nbsp;+</h2>
+                                </div>
+                                <span class="text-muted count-display-bottom">สำนักงานบัญชีที่ร่วมเป็นพาร์ตเนอร์กับเรา</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-12 col-12"></div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-12 d-md-none d-lg-block p-0">
+                <img class="pic-index1" src="../../assets/img/pic-index1.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
